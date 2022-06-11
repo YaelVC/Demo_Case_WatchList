@@ -1,0 +1,12 @@
+<div class="containerLogin">
+    <button mat-raised-button 
+        (click)="getToken()" 
+s        color="warn"
+        [disabled]="!disabled">
+        Obtener token
+    </button>
+    <span class="spacer"></span>
+    <a *ngIf="linkToken!==''" href={{linkToken}} target="_blank">Haz click aquí para activar token</a>
+    <span class="spacer"></span>
+    <button mat-raised-button routerLink="/listMovies" (click)="initSession()" [disabled]="!disabledSesion">Activar sesión</button>
+</div>

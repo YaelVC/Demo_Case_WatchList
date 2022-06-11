@@ -1,10 +1,14 @@
 # CaseWatchList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+This democase consists of consuming the API's The movie db, https://www.themoviedb.org and show two list. A movies' list and favorite movies' list.
+The client can add or remove a movie of the favorite movies' list. When this occurs the favorite movies' list is updated.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/auth/home`. 
+How first step, you should click on button "GET A TOKEN", then you will can see a link "Haz click aquí para activar token", you shlould click here and you will be directed to a page where you should click on "Approve". Then you will back to app and click on button "Activar sesión". You will be directed to page's list and you can see both list.
+
+If you will click on a movie, you can see the information about this movie. You can back for the page's lists.
 
 ## Code scaffolding
 

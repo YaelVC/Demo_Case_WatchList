@@ -1,0 +1,16 @@
+.container {
+    padding: 2rem;
+}
+
+mat-card {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.imgMovie {
+    width: 300px;
+    align-items: center;
+}

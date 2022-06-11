@@ -1,0 +1,11 @@
+.container {
+    padding: 1rem;
+}
+.containerList {
+    width: 100vw;
+    overflow-x: scroll;
+}
+.btnNext {
+    position: relative;
+    top: 13rem
+}

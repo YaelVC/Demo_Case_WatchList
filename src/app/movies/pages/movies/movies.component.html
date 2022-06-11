@@ -1,0 +1,29 @@
+<div class="container">
+    <mat-card>
+        <mat-card-title>
+            {{movie?.title}}
+        </mat-card-title>
+        <img class="imgMovie" src="{{url}}{{movie?.poster_path}}" alt="">
+        <mat-card-content>
+            <p>
+                {{movie?.overview}}
+            </p>
+
+            <mat-list>
+                <mat-list-item>
+                  <mat-icon mat-list-icon>favorite</mat-icon>
+                  <div mat-line color class="warn">{{movie?.vote_count}}</div>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <mat-icon mat-list-icon>diversity_1</mat-icon>
+                  <div mat-line>{{movie?.vote_average}}</div>
+                </mat-list-item>
+              </mat-list>
+              
+
+           
+            
+        </mat-card-content>
+    </mat-card>
+</div>

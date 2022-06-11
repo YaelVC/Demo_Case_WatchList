@@ -1,0 +1,23 @@
+mat-card mat-card-header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+mat-card mat-card-header mat-card-title {
+    font-size: 15px;
+    text-align: center;
+}
+
+mat-card mat-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster {
+    width: 150px;
+    
+}

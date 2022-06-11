@@ -1,0 +1,30 @@
+<div class="container">
+    <app-title-list [title]="titleList"></app-title-list>
+    <div class="containerList" fxLayout="row" fxLayoutGap="20px" fxLayout.xs="column">
+        <div fxFlex="20" fxFlex.lg="15" fxFlex.sm="30" *ngFor="let item of listMoviesShow">
+            <app-movie-card [item] = "item" 
+                [show]="showBtnListMovies"
+                (movieSelect)="addMovie($event)">
+            </app-movie-card>
+        </div> 
+        <button mat-mini-fab 
+            color="accent" 
+            aria-label="Icon load more movies"
+            class="btnNext">
+            <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+
+    </div>
+</div>
+
+<div class="container">
+    <app-title-list [title]="favoriteListTitle"></app-title-list>
+    <div class="containerList" fxLayout="row" fxLayoutGap="20px" fxLayout.xs="column">
+        <div fxFlex="20" fxFlex.lg="15" fxFlex.sm="30" *ngFor="let item of listMoviesFavorite">
+            <app-movie-card [item] = "item" 
+                [show]="showBtnFavoriteMovies"
+                (movieSelect)="removeMovie($event)">
+            </app-movie-card>
+        </div>
+    </div>
+</div>
